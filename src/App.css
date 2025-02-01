@@ -1,0 +1,36 @@
+/* App.css */
+.wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #ff4b5c;
+    position: relative;
+    transform-origin: center;
+    transition: transform 3s ease-out;
+  }
+  
+  .wheel-section {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff4b5c;
+    border-right: 2px solid #fff;
+  }
+  
+  .wheel-section span {
+    transform: rotate(-90deg);
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+  }
+  
